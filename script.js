@@ -298,7 +298,7 @@ const solutionDetails = {
   pias: {
     title: 'Pias',
     image: './assets/img/pia_01.jpg',
-    html: '<p>Pias em mármore, granito e superfícies tecnológicas com acabamentos variados para cozinhas, banheiros e áreas de apoio.</p><ul><li>Opções de bordas e espessuras</li><li>Tratamentos de impermeabilização</li><li>Indicação conforme uso do ambiente</li></ul>'
+    html: '<p>Pias em mármore ou granito com acabamentos variados para cozinhas, banheiros e áreas de apoio.</p><ul><li>Opções de bordas e espessuras</li><li>Tratamentos de impermeabilização</li><li>Indicação conforme uso do ambiente</li></ul>'
   },
   balcoes: {
     title: 'Balcões',
@@ -308,7 +308,7 @@ const solutionDetails = {
   cubas: {
     title: 'Cubas esculpidas',
     image: './assets/img/cuba_01.jpg',
-    html: '<p>Execução artesanal com quedas d’água precisas, ralo oculto e encaixes perfeitos. Destaque para lavabos e banheiros.</p><ul><li>Acabamentos: polido, escovado, levigado</li><li>Materiais: mármore, quartzito, ultracompactas</li><li>Prazo médio: 7–12 dias úteis</li></ul>'
+    html: '<p>Execução artesanal com quedas d’água precisas, ralo oculto e encaixes perfeitos. Destaque para lavabos e banheiros.</p><ul><li>Acabamentos: polido, escovado, levigado</li><li>Materiais: mármore, quartzito, granito</li><li>Prazo médio: 7–12 dias úteis</li></ul>'
   },
   escadas: {
     title: 'Escadas',
@@ -331,7 +331,7 @@ const solutionDetails = {
     html: `
       <p>Projetamos bancadas e painéis para suportar <strong>calor, gordura e uso intenso</strong>, sem abrir mão da estética.</p>
       <ul>
-        <li><strong>Materiais indicados:</strong> superfícies ultracompactas, granitos escuros, quartzito de alta resistência</li>
+        <li><strong>Materiais indicados:</strong> granitos escuros, quartzito de alta resistência</li>
         <li><strong>Detalhes recomendados:</strong> frontão alto, protetor térmico próximo à churrasqueira, quedas d’água, rodabanca</li>
         <li><strong>Extras:</strong> recortes para grelhas/queimadores, nichos e apoio para utensílios</li>
       </ul>` 
@@ -342,7 +342,7 @@ const solutionDetails = {
     html: `
       <p>Soluções que unem <strong>praticidade de limpeza</strong> e sofisticação. Ideal para tampos, nichos e cubas esculpidas.</p>
       <ul>
-        <li><strong>Materiais indicados:</strong> mármore com impermeabilização, quartzito, ultracompactas</li>
+        <li><strong>Materiais indicados:</strong> mármore com impermeabilização, quartzito</li>
         <li><strong>Opções:</strong> cuba esculpida com ralo oculto, saias finas (slim) ou robustas, rodabanca integrado</li>
         <li><strong>Cuidados:</strong> evitar produtos ácidos; limpeza com detergente neutro</li>
       </ul>` 
@@ -353,7 +353,7 @@ const solutionDetails = {
     html: `
       <p>Bancadas pensadas para <strong>alto desempenho diário</strong>, com resistência a manchas e riscos.</p>
       <ul>
-        <li><strong>Materiais indicados:</strong> granitos, ultracompactas (alto desempenho térmico/químico)</li>
+        <li><strong>Materiais indicados:</strong> granitos (alto desempenho térmico/químico)</li>
         <li><strong>Detalhes:</strong> área molhada rebaixada, escorredor usinado, cantos arredondados para segurança</li>
         <li><strong>Integrações:</strong> cooktop, cuba e lixeira embutida, tomadas e acessórios</li>
       </ul>` 
@@ -364,7 +364,7 @@ const solutionDetails = {
     html: `
       <p>Funcionalidade e durabilidade para um ambiente exposto a <strong>água e produtos químicos</strong>.</p>
       <ul>
-        <li><strong>Materiais indicados:</strong> granitos claros/escovados, ultracompactas</li>
+        <li><strong>Materiais indicados:</strong> granitos claros/escovados</li>
         <li><strong>Soluções:</strong> tanque em pedra, área de esfregar usinada, bordas de contenção</li>
         <li><strong>Cuidados:</strong> manutenção simples com detergente neutro; evitar solventes agressivos</li>
       </ul>` 
@@ -375,7 +375,7 @@ const solutionDetails = {
     html: `
       <p>Projetos para sol e chuva, com <strong>acabamentos antiderrapantes</strong> e alta resistência mecânica.</p>
       <ul>
-        <li><strong>Materiais indicados:</strong> quartzito, granitos flameados/escovados, porcelanato técnico</li>
+        <li><strong>Materiais indicados:</strong> quartzito, granitos flameados/escovados</li>
         <li><strong>Aplicações:</strong> bancadas, decks, revestimentos e bordas de piscina</li>
         <li><strong>Drenagem:</strong> caimento e rodabanca para evitar acúmulo de água</li>
       </ul>` 
