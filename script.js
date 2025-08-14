@@ -197,7 +197,7 @@ toggle?.addEventListener('click', () => {
   }, 50);
 });
 
-// Posiciona itens na timeline ondulada ao longo do path (SVG)
+// Posiciona itens na timeline ondulada ao longo do path (SVG) com escala responsiva
 (() => {
   const svg = document.querySelector('.tw-svg');
   const path = document.getElementById('tw-path');
@@ -205,29 +205,28 @@ toggle?.addEventListener('click', () => {
   const items = document.querySelectorAll('.tw-item');
 
   const positionItems = () => {
+    const vb = svg.viewBox.baseVal || { width: svg.clientWidth, height: svg.clientHeight };
+    const scaleX = svg.clientWidth / vb.width;
+    const scaleY = svg.clientHeight / vb.height;
     const length = path.getTotalLength();
+    const offsetY = parseFloat(getComputedStyle(svg).top || '0');
     items.forEach((el) => {
       const p = parseFloat(el.getAttribute('data-p') || '0');
-      const point = path.getPointAtLength(length * p);
-      // offset Y para afastar do topo e evitar sobreposição com a citação
-      const offsetY = 92; // deve bater com top da .tw-svg
-      el.style.left = `${point.x}px`;
-      el.style.top = `${point.y + offsetY}px`;
+      const pt = path.getPointAtLength(length * p);
+      const x = pt.x * scaleX;
+      const y = pt.y * scaleY + (isNaN(offsetY) ? 0 : offsetY);
+      el.style.left = `${x}px`;
+      el.style.top = `${y}px`;
     });
   };
 
-  const resizeObserver = new ResizeObserver(() => {
-    positionItems();
-  });
-  // observar container para reflow correto
-  const container = document.querySelector('.processflow--vertical');
-  if (container) resizeObserver.observe(container);
+  const resizeObserver = new ResizeObserver(positionItems);
   resizeObserver.observe(svg);
   window.addEventListener('resize', positionItems);
   positionItems();
 })();
 
-// Posiciona itens do processo ao longo do path (SVG) - suporta vertical
+// Posiciona itens do processo ao longo do path (SVG) - suporta vertical e escala responsiva
 (() => {
   const svg = document.querySelector('.pf-svg');
   const path = document.getElementById('pf-path');
