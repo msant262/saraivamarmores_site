@@ -104,11 +104,7 @@ body {
   padding: 14px 0;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--md-sys-color-on-surface); text-decoration: none; font-weight: 700; }
-.brand__logo {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: linear-gradient(145deg, #a8c7fa 0%, #6ea8ff 100%);
-  color: #0b1a2b; display: grid; place-items: center; font-weight: 800;
-}
+.brand__logo { width: 80px; height: 80px; border-radius: 6px; object-fit: contain; background: transparent; display: block; }
 .brand__name { letter-spacing: .4px; }
 
 .nav { display: flex; align-items: center; gap: 14px; }
